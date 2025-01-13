@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset=" UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV YESS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/experiences.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <script defer src="js/app.js"></script>
+  </head>
+
+  <body>
+    <header class="topheader">
+      <nav class="topnav">
+        <a href="#" class="logo">
+          <img
+            height="50"
+            width="50"
+            src="image/potato.jpg"
+            alt="pagina principal"
+          />
+          <div>
+            Yessly<br />
+            { code }
+          </div>
+        </a>
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="image/hamburger-icon.svg" alt="abrir menú" />
+        </button>
+        <ul class="menu">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="image/close-icon.svg" alt="cerrar menú" />
+          </button>
+
+          <li><a href="#profile" class="selected">Perfil</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="horizontal-pad vertical-pad">
+      <section class="profile" id="profile">
+        <div class="profile-info">
+          <h1 class="profile-title">Hola, soy <br />Yessly Mayorga</h1>
+          <p class="profile-details">
+            Soy una estudiante de ingeniería en sistemas, con conocimientos
+            básicos de programación web, base de datos y programación general.
+          </p>
+          <button class="profile-btn">Descargar CV</button>
+        </div>
+        <span class="profile-img-section">
+          <img
+            class="profile-img"
+            src="image/potato.jpg"
+            alt="no tengo foto profesional xd"
+          />
+          <div class="profile-img-line"></div>
+        </span>
+      </section>
+    </div>
+
+    <section class="experiences" id="experience">
+      <img src="image/wave.svg" alt="división" class="wave" />
+      <div class="experiences-body">
+        <h2 class="experiences-title">Experiencia</h2>
+        <div class="experiences-grid">
+          <div class="empty"></div>
+          <div class="line"></div>
+
+          <div class="exps">
+            <div class="experience-date">2022</div>
+            <div class="experience-place">COBACH 10</div>
+            <div class="experience-position">Proyecto Final</div>
+            <div class="experience-description">
+              Desarrollo de un proyecto final de especialidad: "Programación
+              web", una página web funcional e interactiva con uso de HTML Y
+              CSS.
+            </div>
+          </div>
+
+          <div class="exps experience_left">
+            <div class="experience-date">2024</div>
+            <div class="experience-place">ITCH II</div>
+            <div class="experience-position">Proyecto de semestre</div>
+            <div class="experience-description">
+              Desarrollo de un proyecto final de la materia: "Principios
+              electricos y aplicaciones digitales", una casa domática funcional.
+            </div>
+          </div>
+
+          <div class="line"></div>
+          <div class="empty"></div>
+          <div class="empty"></div>
+          <div class="line"></div>
+
+          <div class="exps">
+            <div class="experience-date">2024</div>
+            <div class="experience-place">ITCH II</div>
+            <div class="experience-position">Proyecto de semestre</div>
+            <div class="experience-description">
+              Desarrollo de un proyecto final de la materia: "Fundamentos de
+              ingeniería de software", una aplicación de banca móvil de nombre:
+              "SIMPLEPAY", especializada en ayuda financiera para personas
+              mayores o con limitaciones.
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="image/wave.svg" alt="división" class="wave wave_bottom" />
+    </section>
+
+    <div class="horizontal-pad vertical-pad">
+      <section class="skills" id="skills">
+        <h2 class="skills-title">Habilidades</h2>
+        <ul class="skills-list">
+          <li class="skills-skill">CSS</li>
+          <li class="skills-skill">JavaScript</li>
+          <li class="skills-skill">HTML</li>
+          <li class="skills-skill">Java</li>
+          <li class="skills-skill">C++</li>
+          <li class="skills-skill">MySQL</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="horizontal-pad vertical-pad">
+      <section class="contact" id="contact">
+        <h2 class="contact-title">Contacto</h2>
+        <div class="contact-details">
+          <div class="contact-details-group">
+            <p class="contact-label">Dirección:</p>
+            <p class="contact-text">Chihuahua, México.</p>
+          </div>
+          <div class="contact-details-group">
+            <p class="contact-label">Email:</p>
+            <p class="contact-text">yesslypuentes@gmail.com</p>
+          </div>
+          <div class="contact-details-group">
+            <p class="contact-text">Deje su mensaje y con gusto le responderé.</p>
+          </div>
+        </div>
+        <form class="contact-form">
+          <div class="contact-form-group">
+            <label for="name">Nombre</label>
+            <input required type="text" name="name" id="name" />
+          </div>
+          <div class="contact-form-group">
+            <label for="email">Email</label>
+            <input required type="email" name="email" id="email" />
+          </div>
+          <div class="contact-form-group">
+            <label for="message">Mensaje</label>
+           <textarea required name="message" id="message" rows="6"></textarea>
+          </div>
+
+          <button type="submit" class="contact-form-sumbit">Enviar</button>
+        </form>
+        <nav class="social">
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://www.linkedin.com/in/yessly-mayorga-545158346/">
+                <img src="image/linkedin.svg" alt="linkedin profile">
+              </a>  
+            </li>
+            <li class="social-item">
+                <a href="https://github.com/YessPuentes12">
+                  <img src="image/github.svg" alt="Github profile">
+                </a>  
+              </li>
+              <li class="social-item">
+                <a href="https://www.youtube.com/@YessPuentes">
+                  <img src="image/youtube.svg" alt="Youtube profile">
+                </a>  
+              </li>
+          </ul>  
+        </nav>
+      </section>
+    </div>
+  </body>
+</html>
